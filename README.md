@@ -10,6 +10,13 @@ In the directory where the package directory is loaded, open a terminal and run
 R CMD INSTALL permuDE
 ```
 
+Alternatively, you can install in a R session:
+
+```
+install.packages("remotes")
+remotes::install_github("Maj18/permuDE")
+```
+
 To check whether the package has been properly installed, start a R session and type:
 
 ```
