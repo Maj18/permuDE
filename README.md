@@ -10,7 +10,7 @@ In the directory where the package directory is loaded, open a terminal and run
 R CMD INSTALL permuDE
 ```
 
-Alternatively, you can install in a R session:
+Alternatively, you can install the package in a R session:
 
 ```
 install.packages("remotes")
