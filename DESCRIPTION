@@ -1,0 +1,13 @@
+Package: permuDE
+Type: Package
+Title: Permutation test on omics data
+Version: 1.0
+Date: 2025-03-16
+Author: Yuan Li [aut, cre]
+Maintainer: Yuan Li <yuan.li@nbis.se>
+Description: Perform permutation test on omics data to look for features that significantly differ between two groups, no assumption about data distribution and robust to ties.
+Suggests:
+	dplyr
+Imports:
+	future, future.apply
+License: GPL (>=2)
