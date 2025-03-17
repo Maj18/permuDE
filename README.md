@@ -1,17 +1,25 @@
 # permuDE
 Perform permutation test on omics data to look for features differentially expressed between 2 different groups; this method does not require any data distribution and is robust to ties.
 # How to use this package
-## To install the permuDE package, download the package locally
-## In the directory where the package directory is loaded, open a terminal
-## Run
-R CMD INSTALL permuDE
-## To check whether the package has been properly installed, start a R session
-R
-## In R session:
-library(permuDE)
+
+To install the permuDE package, download the package locally
+
+In the directory where the package directory is loaded, open a terminal
+
+Run
+
+> R CMD INSTALL permuDE
+
+To check whether the package has been properly installed, start a R session
+> R
+
+In R session:
+
+>library(permuDE)
 
 ## For an example run (in R) after have permuDE loaded:
 
+```
 ### generate a feature abundance matrix with 10 rows and 8 columns
 library(dplyr)
 set.seed(123)
@@ -25,3 +33,4 @@ samples_group2 = colnames(feature_abundance_matrix)[5:8]
 result_test = permuDEtest(data=feature_abundance_matrix, samples_group1, 
                      samples_group2, n_perm=10000, workers=4) 
 head(result_test)
+```
