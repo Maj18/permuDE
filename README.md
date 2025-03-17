@@ -4,18 +4,17 @@ Perform permutation test on omics data to look for features differentially expre
 
 To install the permuDE package, download the package locally
 
-In the directory where the package directory is loaded, open a terminal
+In the directory where the package directory is loaded, open a terminal and run
 
-Run
+```
+R CMD INSTALL permuDE
+```
 
-> R CMD INSTALL permuDE
+To check whether the package has been properly installed, start a R session and type:
 
-To check whether the package has been properly installed, start a R session
-> R
-
-In R session:
-
->library(permuDE)
+```
+library(permuDE)
+```
 
 ## For an example run (in R) after have permuDE loaded:
 
