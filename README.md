@@ -23,7 +23,7 @@ To check whether the package has been properly installed, start a R session and 
 library(permuDE)
 ```
 
-## For an example run (in R) after have permuDE loaded:
+## For an example run (in R) after having permuDE being loaded:
 
 ```
 ### generate a feature abundance matrix with 10 rows and 8 columns
