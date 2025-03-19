@@ -2,20 +2,19 @@
 Perform permutation test on omics data to look for features differentially expressed between 2 different groups; this method is non-parametric, does not require any data distribution and is robust to ties.
 # How to use this package
 
-To install the permuDE package, download the package locally
-
-In the directory where the package directory is loaded, open a terminal and run
-
-```
-R CMD INSTALL permuDE
-```
-
-Alternatively, you can install the package in a R session:
+To install the permuDE package in a R session:
 
 ```
 install.packages("remotes")
 remotes::install_github("Maj18/permuDE")
 ```
+
+Alternatively, you can download the package locally, and in the directory where the package directory is loaded, open a terminal and run
+
+```
+R CMD INSTALL permuDE
+```
+
 
 To check whether the package has been properly installed, start a R session and type:
 
