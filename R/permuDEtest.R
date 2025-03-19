@@ -29,7 +29,8 @@ permuDEtest = function(data, samples_group1, samples_group2, n_perm=1000, worker
 			as.data.frame() %>% t() %>% as.data.frame()
 		rownames(combined_data2) = rownames(data)[i]
 		combined_data2$P_value = p_value
-		combined_data2 %>% dplyr::select(P_value, everything())
+		combined_data2$diff_mean = original_statistic
+		combined_data2 %>% dplyr::select(P_value, diff_mean, everything())
 	}, future.seed = TRUE) %>% Reduce(rbind, .)
 	result$padj_BH = p.adjust(result$P_value, method = "BH")
 	result %>% select(P_value, padj_BH, everything()) %>% 
